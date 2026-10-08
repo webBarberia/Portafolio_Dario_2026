@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  padding: 25px 20px;
+  background-color: var(--fondo-2);
+  color: var(--texto-2);
+  text-align: center;
+  border-top: 1px solid var(--borde);
+  box-sizing: border-box;
+}
+
+.footer p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-credit {
+  color: var(--texto-3);
+  font-size: 12px;
+}

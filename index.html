@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/imagenes/iconos/Logo-Dario-2026.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio-Dario-Catagua</title>
+    <script>
+      // Aplica el tema guardado ANTES de pintar (evita el flash de tema)
+      (function () {
+        try {
+          var guardado = localStorage.getItem("tema");
+          var sistemaClaro = window.matchMedia(
+            "(prefers-color-scheme: light)",
+          ).matches;
+          var tema = guardado || (sistemaClaro ? "claro" : "oscuro");
+          document.documentElement.setAttribute("data-tema", tema);
+        } catch (e) {
+          document.documentElement.setAttribute("data-tema", "oscuro");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
